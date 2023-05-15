@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        color: #777;
+      }
+
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3 {
+        position: relative;
+        opacity: 0.85;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .bgimg-1 {
+        background-image: url("https://images8.alphacoders.com/667/667873.png");
+        min-height: 100%;
+      }
+
+      .bgimg-2 {
+        background-image: url("https://i.ibb.co/XxbzXF2/82410.jpg");
+        min-height: 400px;
+      }
+
+      .bgimg-3 {
+        background-image: url("https://images7.alphacoders.com/736/736462.png");
+        min-height: 400px;
+      }
+      .numbers {
+        font-family: "Arial", sans-serif;
+        font-size: 75px;
+        line-height: 1em;
+        text-align: center;
+        margin: 20px auto;
+        overflow: hidden;
+      }
+      .numbers__window {
+        display: inline-block;
+        overflow: hidden;
+        width: 0.5em;
+        height: 1em;
+      }
+      .numbers__window__digit {
+        font: "poppins";
+        word-break: break-all;
+        display: block;
+        width: 0;
+        padding: 0 0.52em 0 0;
+        margin: 0 auto;
+        overflow: inherit;
+        animation: counting 0.4s steps(10) forwards infinite;
+      }
+      .numbers__window__digit::before {
+        content: attr(data-fake);
+        display: inline-block;
+        width: 100%;
+        height: auto;
+      }
+      .numbers__window__digit--1 {
+        animation-iteration-count: 3;
+      }
+      .numbers__window__digit--2 {
+        animation-iteration-count: 6;
+      }
+      .numbers__window__digit--3 {
+        animation-iteration-count: 9;
+      }
+      .numbers__window__digit--4 {
+        animation-iteration-count: 12;
+      }
+      .numbers__window__digit--5 {
+        animation-iteration-count: 15;
+      }
+
+      @keyframes counting {
+        100% {
+          transform: translate3d(0, -10em, 0);
+        }
+      }
+      .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+      }
+
+      .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+      }
+      .hero {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .hero img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+      }
+      .hero #base {
+        z-index: 6;
+      }
+      .hero #text {
+        position: absolute;
+        color: #fefefe;
+        font-size: clamp(1rem, 5.5vw, 6rem);
+        white-space: nowrap;
+        letter-spacing: 3px;
+        z-index: 5;
+        right: -850px;
+      }
+
+      h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+      }
+
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1024px) {
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+          background-attachment: scroll;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgimg-1">
+      <section class="hero">
+        <div class="caption">
+          <!-- <img src="images/1.png" class="translateX" data-speed="0.25" id="moon" alt="">
+            <img src="images/2.png" class="translateY" data-speed="0.35" id="clouds" alt="">
+            <img src="images/3.png" class="translateY" data-speed="0.15" id="mount" alt=""> -->
+          <h1 id="text" class="translateX" data-speed="-3">
+            HAPPY 1 MONTH ANNIVERSARY!
+          </h1>
+        </div>
+      </section>
+      <!-- <span class="border">HAPPY BIRTHDAY LILY!!</span> -->
+    </div>
+
+    <div
+      style="
+        font-family:cursive ;
+        color: #777;
+        background-color: white;
+        text-align: center;
+        padding: 50px 80px;
+        text-align: justify;
+      "
+    >
+      <p>
+        Happy Anniversary my aloo, one month has passed and it feels as if we met yesterday
+        I hope our bond keeps getting even more stronger as time passes.
+        I'm really glad to have you by my side and I love how you make me feel
+        Thanks for coming into my life and making it way, way better :)
+      </p>
+    </div>
+
+    <div class="bgimg-2">
+      <div class="caption">
+        <span
+          class="border"
+          style="background-color: transparent; font-size: 25px; color: #f7f7f7"
+          >Wish I could have been there with you.</span
+        >
+      </div>
+    </div>
+
+    <div style="position: relative">
+      <div
+        style="
+          color: #ddd;
+          background-color: #282e34;
+          text-align: center;
+          padding: 50px 80px;
+          text-align: justify;
+        "
+      >
+        <div class="bgimg-2">
+          <h1>We have known each other for</h1>
+          <div class="numbers">
+            <span class="numbers__window">
+              <span
+                class="numbers__window__digit numbers__window__digit--1"
+                data-fake="8642519073"
+                >7</span
+              >
+            </span>
+            <span class="numbers__window">
+              <span
+                class="numbers__window__digit numbers__window__digit--2"
+                data-fake="0207186394"
+                >3</span
+              >
+            </span>
+            <span class="numbers__window">
+              <span
+                class="numbers__window__digit numbers__window__digit--3"
+                data-fake="8395216407"
+                >0</span
+              >
+            </span>
+            <span class="numbers__window">
+              <span
+                class="numbers__window__digit numbers__window__digit--4"
+                data-fake="8395216408"
+                >8</span
+              >
+            </span>
+            <h2>Hours</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgimg-3">
+      <div class="caption">
+        <span
+          class="border"
+          style="background-color: transparent; font-size: 25px; color: #f7f7f7"
+          >And I'm grateful for every minute of it
+        </span>
+      </div>
+    </div>
+
+    <div style="position: relative">
+      <div
+        style="
+          color: #ddd;
+          background-color: #282e34;
+          text-align: center;
+          padding: 50px 80px;
+          text-align: justify;
+        "
+      >
+        <p>Lets hope we keep reaching more milestones just like this</p>
+      </div>
+    </div>
+
+    <div class="bgimg-1">
+      <div class="caption">
+        <span
+          class="border"
+          style="background-color: transparent; font-size: 25px; color: #f7f7f7"
+        >
+          Aloo you a lot <3 </span
+        >
+      </div>
+    </div>
+    <script>
+      const translateX = document.querySelectorAll(".translateX");
+      const translateY = document.querySelectorAll(".translateY");
+      window.addEventListener("scroll", () => {
+        let scroll = window.pageYOffset;
+        translateX.forEach((element) => {
+          let speed = element.dataset.speed;
+          element.style.transform = `translateX(${scroll * speed}px)`;
+        });
+        translateY.forEach((element) => {
+          let speed = element.dataset.speed;
+          element.style.transform = `translateY(${scroll * speed}px)`;
+        });
+      });
+
+      var a = 0;
+      $(window).scroll(function () {
+        var oTop = $("#counter").offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+          $(".counter-value").each(function () {
+            var $this = $(this),
+              countTo = $this.attr("data-count");
+            $({
+              countNum: $this.text(),
+            }).animate(
+              {
+                countNum: countTo,
+              },
+
+              {
+                duration: 2000,
+                easing: "swing",
+                step: function () {
+                  $this.text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                  $this.text(this.countNum);
+                  //alert('finished');
+                },
+              }
+            );
+          });
+          a = 1;
+        }
+      });
+      // This code will trigger a counter when the user scrolls to the element with the id "counter"
+      window.addEventListener("scroll", function() {
+  // Get the top position of the counter element
+  var counterTop = document.getElementById("counting").offsetTop;
+
+  // Get the current scroll position of the window
+  var windowTop = window.scrollY;
+
+  // If the user has scrolled to the counter element, start the counter
+  if (windowTop > counterTop) {
+    // Trigger the keyframe animation
+    document.getElementById("counting").classList.add("animated");
+  }
+});
+    </script>
+  </body>
+</html>
